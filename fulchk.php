@@ -1,5 +1,5 @@
 <?php
-  $_url = 'https://api.nwn.beamdog.net/v1/servers/JkR9vd+oT2yjklVNqcWXvg3qbr+GLABahn2ua6NCu1Y=';
+  $_url = 'https://api.nwn.beamdog.net/v1/servers/[ADD_YOUR_PUBLIC_KEY_HERE]';
 
   $_url_var = implode('', file($_url));
   $_url_obj = json_decode($_url_var, true);
