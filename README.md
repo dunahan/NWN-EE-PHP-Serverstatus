@@ -6,3 +6,9 @@ Yet only a prototyped small check, which I plan to be a banner and later a more 
 
 Simply add your 'kxPublicKey' in the url at line four.
 For a banner pic, add the url to the pic at line two.
+
+I provided a little code snippet in html to add it as a banner in html-snippet.html.
+
+
+Here is a example for my persistent world...
+https://www.schwerterkueste.de/banner.php
