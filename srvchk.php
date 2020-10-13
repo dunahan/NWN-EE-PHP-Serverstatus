@@ -1,5 +1,5 @@
 <?php
-  $img = ImageCreateFromPng("");  // Add the url between the double quotes
+  $img = ImageCreateFromPng("");  // Add the url between the double quotes, best working with a 1200x150 pic
   $col = ImageColorAllocate($img, 180, 180, 85);
   $shd = ImageColorAllocate($img, 0, 0, 0); // adds a nice shadow below the text
   $url = 'https://api.nwn.beamdog.net/v1/servers/';  // Add the kx_pk key from your server after the last slash
