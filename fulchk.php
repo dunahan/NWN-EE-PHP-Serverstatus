@@ -18,9 +18,9 @@
   echo 'Server Host: '.$urlobj['host'].':'.$urlobj['port'].'<br>';
   echo 'Server Country: '.$urlobj['language'].'<br>';                             //uk/de/us
   echo 'Server Description: '.$urlobj['module_description'].'<br>';
-  echo 'OS: '.$urlobj['os'].'<br>';                                               //win/lnx/...
-  echo 'Player vs Player: '.$urlobj['pvp'].'<br>';                                //party/...
-  echo 'Game Category: '.$urlobj['game_type'].'<br>';                             //roleplay/...
+  echo 'OS: '.$urlobj['os'].'<br>';                                               //win/lnx
+  echo 'Player vs Player: '.$urlobj['pvp'].'<br>';                                //party/usw
+  echo 'Game Category: '.$urlobj['game_type'].'<br>';                             //roleplay/usw
   echo 'Level Range: '.$urlobj['min_level'].'-'.$urlobj['max_level'].'<br>';
   echo 'Server Version: '.$urlobj['build'].'.'.$urlobj['rev'].'<br>';
   
@@ -35,27 +35,27 @@
   echo 'Party Type: '.$urlobj['one_party'].'<br>';                                //type
   
   $plp = $urlobj['player_pause'];
-  if ($plp = 'true') {
-    echo 'Players Pause: Yes<br>';
+  if ($plp = 'false') {
+    echo 'Players Pause: No<br>';
   }
   else {
-    echo 'Players Pause: No<br>';
+    echo 'Players Pause: Yes<br>';
   }
 
   $ilr = $urlobj['ilr'];
-  if ($ilr = 'false') {
-    echo 'Item Level Restrictions: No<br>';
+  if ($ilr = 'true') {
+    echo 'Item Level Restrictions: Yes<br>';
   }
   else {
-    echo 'Item Level Restrictions: Yes<br>';
+    echo 'Item Level Restrictions: No<br>';
   }
   
   $elc = $urlobj['elc'];
-  if ($elc = 'false') {
-    echo 'Legal Characters: No<br>';
+  if ($elc = 'true') {
+    echo 'Legal Characters: Yes<br>';
   }
   else {
-    echo 'Legal Characters: Yes<br>';
+    echo 'Legal Characters: No<br>';
   }
   
   $pwd = $urlobj['passworded'];
@@ -66,5 +66,5 @@
     echo 'Password: Yes<br>';
   }
   
-  echo 'Last check: '.$urlobj['first_seen'].'-'.$urlobj['last_advertisement'].'<br>';   //calc diff
+  echo '<br><br>Last check: '.$urlobj['first_seen'].'-'.$urlobj['last_advertisement'].'<br>';   //calc diff
 ?>
