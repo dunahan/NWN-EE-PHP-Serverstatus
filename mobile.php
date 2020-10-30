@@ -4,7 +4,7 @@
         return is_array($hdrs) ? preg_match('/^HTTP\\/\\d+\\.\\d+\\s+2\\d\\d\\s+.*$/',$hdrs[0]) : false;
     };
     
-  $img = ImageCreateFromPng("https://www.schwerterkueste.de/online/images/Alyn_Spiller_Bridge-400x560.png");
+  $img = ImageCreateFromPng("");  // add URL to pic here
   $col = ImageColorAllocate($img, 180, 180, 85);
   $shd = ImageColorAllocate($img, 0, 0, 0);
   $url = 'https://api.nwn.beamdog.net/v1/servers/';   // add your kx_pk after the last slash
